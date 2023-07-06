@@ -1,0 +1,27 @@
+.box1{
+
+    text-align: center;
+    background-color: green;
+    height: 50px;
+}
+.box{
+    
+    display: inline-block;
+    
+}
+div{
+    background-color: rgb(75, 74, 74);
+    margin: 0%;
+}
+.box2{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-left: 5%;
+}
+.box4{
+   display: inline-flex;
+   align-content: flex-end;
+}
+
+
