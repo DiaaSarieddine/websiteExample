@@ -5,20 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebsiteExample</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
 </head>
 
 <body>
     <div class="topDiv">
-        <p style="color:green; ">Get <b style="color:white;">50% off</b> for 3 months</p>
+        <p style="color:#00C853; ">Get <b style="color:white; font-size: 20px;">50% off</b> for 3
+            months</p>
+        <button id="saveBtn">Save now</button>
     </div>
+
+    <div style="display: inline-block; padding: 50px;">
+        <div class="droplists" style="display: flex;  padding: 5px;">
+        <div class="logoName">
+            <i class="fa-solid fa-g" style="margin-top: 100px;"></i>
+
+            <div class="logo">
+                <b>
+                    <p style="font-family: Lucida Console;">INTUIT<br>quickbooks</p>
+                </b>
+            </div>
+        </div>
+
+        <div class="dropdown" style=" display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 500px;">
+                <div class="business">
+                    <span>Small Business</span>
+                    <div class="dropdown-content B">
+                        <p>Business 1</p>
+                        <p>Business 2</p>
+                        <p>Business 3</p>
+                    </div>
+                </div>
+
+                <div class="accountant">
+                    <span>Accountants</span>
+                    <div class="dropdown-content A">
+                        <p>Acc 1</p>
+                        <p>Acc 2</p>
+                        <p>Acc3 3</p>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <p>Pricing</p>
+                </div>
+
+
+
+                <div class="support">
+                    <span>Learn & Support</span>
+                    <div class="dropdown-content S">
+                        <p>sup 1</p>
+                        <p>sup 2</p>
+                        <p>sup 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="display:flex; margin-left: 150px;">
+                <div class="lang" style="display:block;">
+                    <i class="fa-regular fa-globe"></i>
+                    <p>EN</p>
+                </div>
+
+                <div class="dropdown" style="border: solid 2px black; width: 50px; height: 20px; padding: 5px;">
+                    <span>Login</span>
+                    <div class="dropdown-content">
+                        <p>Outlook</p>
+                        <p>Gmail</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="banner-card" style="width: inline-block;">
+            <img src="https://www.ondeck.ca/wp-content/uploads/2021/02/Blog_Feb.-9-2021.jpg" style="width: 100%;"/>
+            <div class="banner-text" id="imageText">
+                <p style="font-size: 15px;">INTUIT SOFTWARE|INTUIT QUICKBOOKS|GLOBAL</p>
+                <b><div class="boldedText" style="color:black; "><p >Smart, Simple</p>
+                    <p>online accounting</p>
+                    <p>software for small</p>
+                    <p>business</p>
+                </div></b>
+            </div>
+            
+            <div class="buttons" style="display: flex;  justify-content:space-between;  align-items:stretch; width:200px;">
+                <button class="buy">Buy now</button>
+                &nbsp;
+                <button class="freeTrial">Free 30 day Trial</button>
+            </div>
+        </div> 
+
+    </div>
+
+
+
 </body>
 
 </html>
 
 <style>
     .topDiv {
-        background-color: #263238;
+
+        display: flex;
+        justify-content: center;
+
+        background-color: #37474F;
         width: 100%;
         height: 3em;
+        padding: 1em;
+    }
+
+    #saveBtn {
+        border-radius: 30px;
+        background-color: #00C853;
+        color: white;
+        border: none;
+        margin-left: 100px;
+        margin-top: 10px;
+        width: 100px;
+        height: 30px;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .banner-text{
+        margin-top: -600px;
+        margin-left: 30px;
+        color: black;
+        font-size: 30px;
+    }
+
+    .buttons{
+        margin-left: 30px;
+    }
+
+    .buy{
+        border-radius: 3px;
+        background-color: lightgreen;
+        height: 40px;
+        width: 100px;
+    }
+
+    .freeTrial{
+        border-radius: 3px;
+        background-color: lightgreen;
+        height: 40px;
+        width: 100px;
     }
 </style>
